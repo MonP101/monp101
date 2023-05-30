@@ -1,6 +1,14 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import * as React from 'react'
+import Dashboard from './component/dashboard'
+import Head from './component/head'
 
-export default function Home() {
-  return <main className={styles.main}></main>
+export interface indexProps {}
+
+export default function index(props: indexProps) {
+  return (
+    <div>
+      <Head></Head>
+      <Dashboard></Dashboard>
+    </div>
+  )
 }
